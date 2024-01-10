@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        
+       
+   
+       
+
+    body {
+    border-image: linear-gradient(45deg, black, white, black, white, black) 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .blinking-border {
+    border-image: linear-gradient(20deg, white, white, black, white, black) 1;
+      border: 20px solid black;
+      border-radius: 50px;
+      padding: 50px;
+      animation: blink 3.2s infinite;
+    }
+    .blurred-background {
+    background: rgba(255, 255, 255, 0.7); /* Adjust the alpha value for the desired background blur effect */
+    backdrop-filter: blur(20px); /* Adjust the blur value for the desired background blur effect */
+}
+    
+    @keyframes blink {
+      20% { border-color: black; background-color: transparent; }
+      50% { border-color: white; background-color: transparent; }
+      100% { border-color: black; background-color: transparent; }
+      40%{ border-color: black};
+      55%{ border-color: white};
+      30%{ border-color: black};
+      20%{ border-color: white};
+    }
+
+    .blinking-element {
+      width: 200px;
+      height: 100px;
+      border: 3px solid white;
+      background-color: black;
+      animation: blink 0.1s infinite;
+    }
+ 
+        
+        }
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            text-align: right;
+            padding: 400px;
+            border-radius: 90px;
+            box-shadow: 2 2 100px rgba(2, 2, 2, 2.20);
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            color: #333;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #333;
+            text-align: left;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            margin: 0 0 50px;
+            color: #fff;
+        }
+
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 20px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            border: none;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .container button:hover {
+            background: #0056b3;
+        }
+        
+    </style>
+</head>
+        
+    </style>
+</head>
+   
+        
+        
+
+<center>
+<body style="background:url('content://com.android.providers.media.documents/document/image%3A1000006727');background-size:cover">
+<section style="display: flex; justify-content: center; align-items: center; min-height: 80vh; width: 105%;font-color: white;">
+          <div class="blinking-border blurred-background"><h1></h1><center><h1>Login</h1><form id="form" action="home.html" method="get">
+           <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+<script>
+    const username = document.getElementById('username')
+    const password = document.getElementById('password')
+    const form = document.getElementById('form')
+
+    form.addEventListener('submit', (e) => {
+      let messages = []
+      if (password.value !== 'campos') {
+      alert("invalid password!");
+      e.preventDefault()
+      errorElement.innerText = messages.join(', ')
+    }
+
+      if (email.value !== 'MCcampos') {
+      alert("invalid email!");
+      e.preventDefault()
+      errorElement.innerText = messages.join(', ')
+    }
+    })
+</script>
+    
+</body>
+</html>
